@@ -1,0 +1,19 @@
+{
+  "name": "mon-site-hebergement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serveur.js",
+  "scripts": {
+    "start": "node serveur.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "geoip-lite": "^2.0.3",
+    "multer": "^2.4.0"
+  }
+}
