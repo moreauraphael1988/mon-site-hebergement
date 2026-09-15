@@ -7,7 +7,9 @@ const geoip = require('geoip-lite');   // <-- AJOUT : géolocalisation IP
 
 const app = express();
 const port = process.env.PORT || 3000;
-
+if (!fs.existsSync('uploads')) {
+  fs.mkdirSync('uploads', { recursive: true });
+}
 const MON_UTILISATEUR = process.env.MON_UTILISATEUR || "admin";
 const MON_MOT_DE_PASSE = process.env.MON_MOT_DE_PASSE || "monMotDePasseSecret123";
 const SECRET = process.env.SECRET || "changezCettePhraseSecretePourLaSecurite";
